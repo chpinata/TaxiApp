@@ -22,7 +22,6 @@ class SecondActivity : AppCompatActivity() {
         val firstName = intent.getStringExtra("first_name")
         val lastName = intent.getStringExtra("last_name")
 
-        // Отображаем данные о пользователе в TextView
         val textViewPhoneNumber = findViewById<TextView>(R.id.textViewPhoneNumber)
         val textViewFirstName = findViewById<TextView>(R.id.textViewFirstName)
         val textViewLastName = findViewById<TextView>(R.id.textViewLastName)
@@ -39,10 +38,9 @@ class SecondActivity : AppCompatActivity() {
             startActivityForResult(intent, REQUEST_CODE_SET_PATH)
         }
 
-        // Обработчик нажатия кнопки "Call Taxi"
+        // Тост при нажатия кнопки "Call Taxi"
         val buttonCallTaxi = findViewById<Button>(R.id.buttonCallTaxi)
         buttonCallTaxi.setOnClickListener {
-            // Выводим всплывающее сообщение об успешной отправке такси
             Toast.makeText(this, "Taxi called successfully", Toast.LENGTH_SHORT).show()
         }
     }
@@ -51,7 +49,6 @@ class SecondActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == REQUEST_CODE_SET_PATH && resultCode == Activity.RESULT_OK) {
-            // Получаем параметры маршрута из результата
             val route = data?.getStringExtra("route")
             val textViewRoute = findViewById<TextView>(R.id.textViewRoute)
             textViewRoute.text = "Route: $route"

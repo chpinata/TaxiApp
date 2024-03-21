@@ -37,45 +37,4 @@
         android:layout_below="@id/lastNameEditText"
         android:layout_marginTop="24dp"
         android:text="Registration" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
-
-        <EditText
-            android:id="@+id/editTextPhoneNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:hint="Phone Number"
-            android:minHeight="48dp" />
-
-        <EditText
-            android:id="@+id/editTextFirstName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editTextPhoneNumber"
-            android:layout_marginTop="20dp"
-            android:hint="First Name"
-            android:minHeight="48dp" />
-
-        <EditText
-            android:id="@+id/editTextLastName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editTextFirstName"
-            android:layout_marginTop="20dp"
-            android:hint="Last Name"
-            android:minHeight="48dp" />
-
-        <Button
-            android:id="@+id/buttonRegistration"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editTextLastName"
-            android:layout_marginTop="40dp"
-            android:text="Registration" />
-
-    </RelativeLayout>
-
 </RelativeLayout>

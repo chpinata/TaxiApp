@@ -1,74 +1,74 @@
-<!-- activity_second.xml -->
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="SecondActivity">
 
-    <TextView
-        android:id="@+id/textViewPhoneNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="30dp"
-        android:text="Phone Number:" />
-
-    <TextView
-        android:id="@+id/textViewFirstName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewPhoneNumber"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:text="First Name:" />
-
-    <TextView
-        android:id="@+id/textViewLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewFirstName"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:text="Last Name:" />
-
-    <TextView
-        android:id="@+id/textViewRoute"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewLastName"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
-        android:text="Route:" />
-
-    <EditText
-        android:id="@+id/editTextRoute"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewRoute"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="1dp"
-        android:hint="Enter route"
-        android:minHeight="48dp" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/buttonSetPath"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextRoute"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
 
-        android:text="Set Path" />
+            <TextView
+                android:id="@+id/textViewPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="Phone Number:" />
 
-    <Button
-        android:id="@+id/buttonCallTaxi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/buttonSetPath"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"
-        android:text="Call Taxi"
-        android:enabled="false" />
+            <TextView
+                android:id="@+id/textViewFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPhoneNumber"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="First Name:" />
 
+            <TextView
+                android:id="@+id/textViewLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFirstName"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:text="Last Name:" />
+
+            <TextView
+                android:id="@+id/textViewRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewLastName"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="Route:" />
+
+
+            <Button
+                android:id="@+id/buttonSetPath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewRoute"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="Set Path" />
+
+            <Button
+                android:id="@+id/buttonCallTaxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonSetPath"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="Call Taxi"
+                android:enabled="false" />
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
